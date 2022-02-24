@@ -369,6 +369,8 @@ display: block;
 
 }
 
+
+
 .training-box1, .training-box2, .training-box3 {
 word-wrap:break-word;
 text-align: center;
@@ -380,6 +382,12 @@ padding-bottom: 60px;
 padding-top: 10px;
 background-color: rgba(238, 238, 238,0.9);
 border-radius: 22px;
+transition: 0.4s;
+}
+
+.training-box1:hover , .training-box2:hover , .training-box3:hover {
+    box-shadow: 1px 1px 6px 1px rgb(70, 76, 87);
+    transform: scale(1.03,1.035);
 }
 
 .training-box1 img, .training-box2 img, .training-box3 img {
@@ -410,18 +418,23 @@ border-radius: 22px;
 
 .training-uitleg {
     display:none;
-    background-color:rgba(238, 238, 238);
     margin-left: 25px;
     margin-right: 25px;
 }
 
 /*om uitleg te tonen*/
 .training-naam:hover+.training-uitleg{
-    display: block;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
 .training-naam h1:hover {
     color: rgba(226, 0, 122); 
+}
+
+.uitleg-box-kopje, .uitleg-box-uitleg {
+    padding-left: 5px;
+    text-align: left;
 }
 
 
