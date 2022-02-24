@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>iAcademy CiVision Samenlevingszaken</title>
+    <link rel="Stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet">
+</head>
+
+<link rel="shortcut icon" type="image/png" href="footage/images/favicon.png"/>
+
+<div class="container">
+    <nav>
+        <div class = "logo">
+            <img src="footage/images/header.png" alt="Header"> 
+            <h4><a href="index.html">iAcademy CiVision Samenlevingszaken</a></h4>
+        </div>
+ 
+        <div class="nav-links">
+            <div class="dropdown-nav">
+                <div class="no-dropbtn-nav"> <a href="index.html" class="current">Home</a></div>
+              </div>
+
+              <div class="dropdown-nav">
+                <div class="no-dropbtn-nav"> <a href="consulent.html">Consulent</a></div>
+              </div>
+
+              <div class="dropdown-nav">
+                <button class="dropbtn-nav"><a href="administratie.html">Administratie</a></button>
+                <div class="dropdown-content-nav">
+                  <a href="administratie.html">Werk & Inkomen</a>
+                  <a href="administratie.html #wmoenjeugd">WMO & Jeugd</a>
+                </div>
+              </div>
+
+              <div class="dropdown-nav">
+                <button class="dropbtn-nav"><a href="beheerder.html">Beheerder</a></button>
+                <div class="dropdown-content-nav">
+                    <a href="beheerder.html">Gebruikersbeheer</a>
+                    <a href="beheerder.html #procesbeheer">Procesbeheer</a>
+                    <a href="beheerder.html #documentcreatie">Documentcreatie</a>
+                    <a href="beheerder.html #applicatiebeheer">Applicatiebeheer</a>
+                </div>
+              </div>
+        </div>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>  
+ 
+
+    <div class="container-home">
+        <div class="flexbox-home onderwerp-1">
+            <img src="footage/images/video.png">
+            <h4>Kennisvideo's</h4>
+            <p> Op deze website vind je kennisitems over CiVision Samenlevingszaken. 
+                Kennisitems zijn korte video's waarin onze consultants jou wegwijs maken in de werking van de applicatie.   
+                De kennisitems zijn onderverdeeld naar rol. Zo vind je eenvoudig de video's die voor jou relevant zijn. 
+                Kies jouw rol in het menu bovenaan deze pagina en ontdek snel welke kennisitems we aanbieden. 
+                <br><br>
+                Ben je een nieuwe gebruiker van CiVision Samenlevingszaken?
+                <br><br>
+                <a class="button-home" href="nieuwe-gebruiker.html">Klik dan hier</a>
+                <br><br>
+           </p>
+           </div> 
+         
+        <div class="flexbox-home onderwerp-2">
+            <img src="footage/images/documentatie.png">    
+            <h4>Documentatie</h4>
+            <p> Een beeld zegt meer dan duizend woorden. Toch behoefte aan documentatie op 'papier'? Ook dat hebben we voor je!
+                <br>
+                <br>
+                Of het nu gaat om releasebeschrijvingen, handleidingen of nieuwsberichten, je vind ze op Topdesk!</a> 
+                <br><br><br><br><br><br><br>
+                <a target="_blank" class="button-home" href="https://pinkroccade.topdesk.net"> Ga naar Topdesk</a>
+                <br><br>
+            </p>
+        </div> 
+
+        <div class="flexbox-home onderwerp-3">
+            <img src="footage/images/training.png">    
+            <h4>Training door een consultant</h4>
+            <P>Iedereen leert anders. Het bekijken van de kennisitems is één manier om je kennis te verbreden. 
+                Heb je behoefte aan verdieping, persoonlijke begeleiding of andere leerstijlen? 
+                Bekijk dan eens ons trainingsaanbod en vraag vrijblijvend een offerte op!
+            <br><br><br><br><br><br><br><br>
+            <a class="button-home" href="trainingen.html">Bekijk onze trainingen</a>
+            <br><br>
+            </P>
+        </div> 
+    </div>
+
+</div>
+
+<script>
+    const navSlide = () => {
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+    
+        burger.addEventListener('click',()=>{
+            nav.classList.toggle('nav-active');
+        });
+    }
+    
+    navSlide(); 
+    
+    </script>
+    <noscript>De website functioneert niet optimaal: Jouw browser ondersteunt geen Javascript</noscript>
+
+
+<footer>
+    <ul class ="footer-links">
+        <li> <a target="_blank" href="https://pinkroccade.topdesk.net">Topdesk</a></li> 
+        <li> 
+            <div class="logo-pink">
+                <a target="_blank" href="https://www.pinkroccadelocalgovernment.nl/beleidsterreinen/samenlevingszaken/">
+                    <img src='footage/images/pink-logo.png' onmouseover="this.src='footage/images/pink-logo-hover.png';" onmouseout="this.src='footage/images/pink-logo.png';" />
+                </a> 
+            </div>
+        </li>
+        <li> <a target="_blank" href="https://www.pinkroccadelocalgovernment.nl/disclaimer/">Disclaimer</a></li>
+    </ul>
+</footer>
+
+</body>
+</html>
