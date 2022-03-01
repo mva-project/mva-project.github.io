@@ -447,8 +447,9 @@ transition: 0.4s;
 }
 
 .training-naam-input:checked ~ .training-uitleg{
-   display: grid;
-       grid-template-columns: 1fr; 
+   display: flex;
+   flex-wrap: wrap;
+
 }
 
 
