@@ -14,8 +14,8 @@ html, body {
 /*NAVIGATIEMENU*/
 
 .container{
-    background-image: url("footage/images/wave.jpg");
-    background-attachment: fixed;
+    background-image: url("footage/images/wave.png");
+    background-size: cover;    
     background-repeat: no-repeat;
     min-height: 93vh; 
 }
@@ -123,7 +123,7 @@ display: block;
 
   
   .dropdown-content-nav a:hover {
-      background-color: rgba(4, 47, 88,0.9); 
+      background-color: rgba(4, 47, 88); 
       color: rgba(238, 238, 238);
     }
   
@@ -137,7 +137,7 @@ display: block;
 /*geeft aan op welke pagina de gebruiker nu zit*/
     a.current:link, a.current:visited {
         color: rgba(226, 0, 122);
-        background-color: rgba(4, 47, 88,0.9);
+        background-color: rgba(4, 47, 88);
       }
 
 /*BURGER MENU EN AANPASSING WANNEER SCHERM KLEINER WORDT*/  
@@ -220,12 +220,12 @@ display: block;
     width: 400px;
     text-align: center;
     border-radius: 22px;
-    box-shadow: 1px 1px 6px 1px rgb(70, 76, 87);
+
     transition: 0.4s;
 }
 
 .flexbox-home:hover {
-    box-shadow: 2px 2px 6px 3px rgb(70, 76, 87);
+    box-shadow: 1px 1px 6px 1px rgb(70, 76, 87);
     transform: scale(1.03,1.035);
 
 }
@@ -430,9 +430,16 @@ transition: 0.4s;
     color: rgba(226, 0, 122); 
 }
 
-.uitleg-box-kopje, .uitleg-box-uitleg {
+.uitleg-box {
     padding-left: 5px;
     text-align: left;
+}
+
+.uitleg-box h3, .uitleg-box p {
+    padding-left: 5px;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 .training-naam-input{
@@ -441,7 +448,7 @@ transition: 0.4s;
 
 .training-naam-input:checked ~ .training-uitleg{
    display: grid;
-       grid-template-columns: 1fr 2fr; 
+       grid-template-columns: 1fr; 
 }
 
 
@@ -449,7 +456,7 @@ transition: 0.4s;
 .footer-links {
     display: flex;
     justify-content:space-around;
-    background-color: rgba(4, 47, 88,0.9);
+    background-color: rgba(4, 47, 88);
     align-items: center;
 }
 
